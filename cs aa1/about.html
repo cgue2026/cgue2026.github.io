@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Sea Brew Menu
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@200;400&family=Oswald&family=Pacifico&display=swap" rel="stylesheet">        
+        <style>
+body {
+    margin: 0;
+    background-color: rgb(173, 250, 250);
+    padding-top: 64px;
+}
+
+nav {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    background-image: linear-gradient(45deg, #3CB6C7, #154247); 
+    font-family: 'Nunito', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    display: inline;
+    float: right;
+}
+
+nav li a {
+    display: block;
+    margin-top: 2px;
+    padding: 14px 100px;
+    background-color: #95d5dd;
+    color:rgb(0, 28, 29);
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav li a:hover {
+    display: block;
+    margin-top: 2px;
+    padding: 14px 100px;
+    background-color: #72bac4;
+    color:rgb(0, 28, 29);
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all ease-in-out 250ms
+}
+
+#current_page {
+    background-color: #72bac4 ;
+}
+
+#contacts {
+    float: left;
+    height: 400px;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 20px;
+    background-color: #4d7c81;
+    border-radius: 5px;
+    width: 44%;
+    padding: 20px;
+}
+
+#contacts h2{
+    color:rgb(17, 65, 95);
+    font-family: 'Lora', serif;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    font-size: 72px;
+}
+
+#contacts h3{
+    color: rgb(112, 218, 218);
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    float: left;
+    margin-right: 480px;
+}
+
+#ophours {
+    float: right;
+    height: 250px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 40px;
+    background-color: #62d1dd;
+    border-radius: 5px;
+    width: 44%;
+    padding: 20px;
+}
+
+#ophours h2 {
+    color:rgb(17, 65, 95);
+    font-family: 'Lora', serif;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    font-size: 72px;
+}
+
+#ophours h3{
+    color: rgb(21, 95, 95);
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+#location {
+    height: 450px;
+    margin-top: 500px;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #24757e;
+    border-radius: 5px;
+    padding: 20px;
+    width: 44%;
+}
+
+#location h2 {
+    color:rgb(159, 208, 238);
+    font-family: 'Lora', serif;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+    font-size: 72px;
+}
+
+#location h3 {
+    color: rgb(144, 212, 212);
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a id="current_page">
+                    About
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                    Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                    Home
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="contacts">
+            <h2>Contact Us:</h2>
+            <img src="pictures/call_sign.png" alt="Image Loading" style="float: left; height: 60px; width: 60px; margin-top: 30px; margin-right: 20px;"><h3>0918 888 6667</h3>
+            <img src="pictures/email_sign.png" alt="Image Loading" style="float: left; height: 60px; width: 60px; margin-top: 30px; margin-right: 20px;"><h3 style="margin-right: 0;">sea_brew@gmail.com</h3>
+        </section>
+        <section id="ophours">
+            <h2>Operating Hours:</h2>
+            <h3>6:30 AM-7:00 PM</h3>
+        </section>
+        <section id="location">
+            <h2>Where We Are:</h2>
+            <h3>14 Tondaligan Rd Bonuan, Dagupan, Pangasinan</h3>
+            <h3>You can see our restaurant on the side of the road close to the beach.</h3>
+        </section>
+    </body>
+</html>

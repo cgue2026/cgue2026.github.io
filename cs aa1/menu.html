@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Sea Brew Menu
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@200;400&family=Oswald&family=Pacifico&display=swap" rel="stylesheet">        
+        <style>
+body {
+    margin: 0;
+    background-color: rgb(173, 250, 250);
+    padding-top: 64px;
+}
+
+nav {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    background-image: linear-gradient(45deg, #3CB6C7, #154247); 
+    font-family: 'Nunito', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    display: inline;
+    float: right;
+}
+
+nav li a {
+    display: block;
+    margin-top: 2px;
+    padding: 14px 100px;
+    background-color: #95d5dd;
+    color:rgb(0, 28, 29);
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav li a:hover {
+    display: block;
+    margin-top: 2px;
+    padding: 14px 100px;
+    background-color: #72bac4;
+    color:rgb(0, 28, 29);
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all ease-in-out 250ms
+}
+
+#current_page {
+    background-color: #72bac4 ;
+}
+
+#menuheader {
+    margin-top: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    height: 245px;
+    background-color: #b6e7ee;
+    border-radius: 10px;
+}
+
+#menuheader h1 {
+    float: left;
+    font-size: 140px;
+    font-family: 'Pacifico', cursive;
+    color: #83c7f1;
+    text-shadow: 0 0 10px #02141f;
+    margin: 0;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+#menuheader img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+#menudividers {
+    margin: 0 60px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 631px;
+}
+
+#menuleft {
+    float: left;
+    width: 49%;
+    margin-right: 2%;
+    height: 591px;
+}
+
+#coffeepicture {
+    float: left;
+    background-image: url(pictures/coffee_picture.jpg);
+    background-size: contain;
+    height: 591px;
+    width: 394px;
+    border-radius: 5px;
+}
+
+#coffeemenu {
+    float: left;
+    background-color: #3CB6C7;
+    height: 591px;
+    width: 448px;
+    border-radius: 5px;
+}
+
+#coffeemenu h2 {
+    color:rgb(17, 59, 85);
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    text-align: center;
+}
+
+#coffeenames {
+    padding-left: 8px;
+    float: left;
+    width: 45%;
+    height: 379px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(7, 43, 65);
+}
+
+#coffeeprices {
+    padding-right: 8px;
+    float: right;
+    width: 45%;
+    height: 379px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(7, 43, 65);
+    text-align: right;
+}
+
+#menuright {
+    float: left;
+    width: 49%;
+    height: 591px;
+}
+
+#snacksmenu {
+    height: 295px;
+    width: 843px;
+    background-color: #02141f;
+    border-radius: 5px;
+}
+
+#snacksmenu h2 {
+    color:rgb(125, 189, 230);
+    font-family: 'Lora', serif;
+    font-size: 72px;
+    margin: 0;
+    text-align: center;
+}
+
+#snacksnames {
+    padding-left: 8px;
+    float: left;
+    width: 45%;
+    height: 203px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(165, 214, 245);
+}
+
+#snacksprices {
+    padding-right: 8px;
+    float: right;
+    width: 45%;
+    height: 203px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(165, 214, 245);
+    text-align: right;
+}
+
+#dinnermenu {
+    height: 271px;
+    width: 843px;
+    background-color: #143b53;
+    border-radius: 5px;
+}
+
+#dinnermenu h2 {
+    color:rgb(171, 216, 243);
+    font-family: 'Lora', serif;
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 72px;
+    text-align: center;
+}
+
+#dinnernames {
+    padding-left: 8px;
+    float: left;
+    width: 45%;
+    height: 183px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(142, 195, 228);
+}
+
+#dinnerprices {
+    padding-right: 8px;
+    float: right;
+    width: 45%;
+    height: 183px;
+    font-size: 24px;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(142, 195, 228);
+    text-align: right;
+}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="about.html">
+                    About
+                    </a>
+                </li>
+                <li>
+                    <a id="current_page">
+                    Menu
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                    Home
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="menuheader">
+            <h1>The Sea</h1>
+            <img id="coffee_logo" src="pictures/coffee_logo.png" alt="Photo Loading">
+            <h1>Brew Menu</h1>
+        </section>
+        <section id="menudividers">
+            <div id="menuleft">
+                <div id="coffeepicture"></div>
+                <div id="coffeemenu">
+                    <h2>Coffee</h2>
+                    <div id="coffeenames">
+                        <p>Chocolate Caramel Latte</p>
+                        <p>Plain Black Coffee</p>
+                        <p>Creamy Chocolate Mocha</p>
+                        <p>Dark Chocolate Cappuccino</p>
+                    </div>
+                    <div id="coffeeprices">
+                        <p style="margin-bottom: 56px;">149.00 Php</p>
+                        <p>79.00 Php</p>
+                        <p style="margin-bottom: 56px;">139.00 Php</p>
+                        <p>129.00 Php</p>
+                    </div>
+                </div>
+            </div>
+            <div id="menuright">
+                <div id="snacksmenu">
+                    <h2>Snacks</h2>
+                    <div id="snacksnames">
+                        <p>Chocolate Chip Cookies</p>
+                        <p>Baked Cinnamon Buns</p>
+                        <p>Chocalate and Coffee Cake</p>
+                    </div>
+                    <div id="snacksprices">
+                        <p>49.00 Php</p>
+                        <p>99.00 Php</p>
+                        <p>109.00 Php</p>
+                    </div>
+                </div>
+                <div id="dinnermenu">
+                    <h2>Dinner</h2>
+                    <div id="dinnernames">
+                        <p>Shrimp Alfredo</p>
+                        <p>Pan-fried Salmon</p>
+                        <p>Clam Stew</p>
+                    </div>
+                    <div id="dinnerprices">
+                        <p>399.00 Php</p>
+                        <p>289.00 Php</p>
+                        <p>229.00 Php</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

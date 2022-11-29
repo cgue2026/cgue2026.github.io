@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Sea Brew
+        </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@200;400&family=Oswald&family=Pacifico&display=swap" rel="stylesheet">        
+        <style>
+body {
+    background-color: #1a1a1a;
+    margin: 0;
+    height: 4000px;
+    padding-top: 60px;
+}
+
+nav {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    height: 64px;
+    background-image: linear-gradient(45deg, #3CB6C7, #154247); 
+    font-family: 'Nunito', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav li{
+    display: inline;
+    float: right;
+}
+
+nav li a {
+    display: block;
+    margin-top: 2px;
+    padding: 14px 100px;
+    background-color: #95d5dd;
+    color:rgb(0, 28, 29);
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+nav li a:hover {
+    display: block;
+    margin-top: 2px;
+    padding: 14px 100px;
+    background-color: #72bac4;
+    color:rgb(0, 28, 29);
+    text-align: center;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all ease-in-out 250ms
+}
+
+header{
+    background-image: url(pictures/sunset_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: aqua;
+    padding-top: 75px;
+    padding-bottom: 100px;
+}
+
+.title_heading {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#current_page {
+    background-color: #72bac4 ;
+}
+
+#welcome {
+    font-size: 96px;
+    font-family: 'Oswald', sans-serif;
+    color: #3d84af;
+    text-shadow: 0 0 10px #c5deee;
+}
+
+#welcome_border {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-style: solid;
+    border-color: #0b2b3f;
+    border-width: 5px;
+    border-radius: 60px;
+    margin-right: 27.5%;
+    margin-left: 27.5%;
+    background-color: rgba(127, 193, 235, 0.5)
+}
+
+#sea_brew {
+    font-size: 140px;
+    font-family: 'Pacifico', cursive;
+    color: #83c7f1;
+    text-shadow: 0 0 10px #02141f;
+    height: 150px;
+}
+
+#sea {
+    float: left;
+    width: 42.5%;
+    text-align: right;
+}
+
+#coffee_logo {
+    width: 200px;
+}
+
+#brew {
+    float: right;
+    width: 42.5%;
+    text-align: left;
+}
+
+#Favorites {
+    margin: 80px 80px;
+    background-color: rgb(173, 250, 250);
+    padding: 30px 60px;
+    border-radius: 5px;
+    height: 2510px;
+}
+
+#favoritesheading {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    text-shadow: 3px 3px rgb(71, 106, 107);
+    margin-bottom: 50px;
+    margin-top: 0;
+    background-color: #83c7f1;
+    border-radius: 5px;
+}
+
+#favoritescoffee {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin-left: 40px;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+#coffee_float {
+    float: left;
+}
+
+#coffeebean {
+    background-image: url(pictures/coffee_beans.png);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#cclatte {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    height: 600px;
+}
+
+#lattepicture {
+    background-image: url(pictures/latte_picture.jpeg);
+    background-size: contain;
+    width: 400.8px;
+    height: 600px;
+    float: left;
+    border-radius: 3px;
+}
+
+#latteinfo {
+    float: left;
+    border-radius: 5px;
+    background-color: #0b2b3f;
+    width: 800px;
+    height: 600px;
+}
+
+#latteinfo h2 {
+    color:rgb(139, 233, 233);
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+#latteinfo h3 {
+    color: rgb(87, 204, 204);
+    background-color: #02141f;
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+
+#latteinfo p {
+    color:rgb(139, 233, 233);
+    margin-top: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+#snacks_float {
+    float: left;
+}
+
+#favoritessnacks {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin-left: 40px;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+#sandwich {
+    background-image: url(pictures/sandwich.png);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#cookies {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    height: 600px;
+}
+
+#cookiesinfo {
+    float: left;
+    border-radius: 5px;
+    background-color: #66b9ec;
+    width: 600px;
+    height: 600px;
+}
+
+#cookiesinfo h2 {
+    color:rgb(17, 59, 85);
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+#cookiesinfo h3 {
+    color: rgb(37, 96, 133);
+    background-color: #9fd6f8;
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+
+#cookiesinfo p {
+    color:rgb(17, 59, 85);
+    margin-top: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
+    font-size: 28px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+#cookiespicture {
+    background-image: url(pictures/cookies_picture.png);
+    background-size: contain;
+    float:left;
+    width: 600px;
+    height: 600px;
+    border-radius: 3px;
+}
+
+#dinner_float {
+    float: left;
+}
+
+#favoritedinner {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    margin-left: 40px;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+#plate {
+    background-image: url(pictures/plate.png);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#pasta {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    height: 600px;
+}
+
+#pastafloatleft {
+    float:left;
+    height: 600px;
+    background-color: #3d84af;
+    border-radius: 5px;
+}
+
+#pastapicture {
+    background-image: url(pictures/pasta_picture.jpg);
+    background-size: contain;
+    width: 690px;
+    height: 400px;
+    border-radius: 3px;
+}
+
+#pastafloatleft h2 {
+    color:rgb(3, 28, 43);
+    font-family: 'Lora', serif;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+#pastafloatleft h3 {
+    color: rgb(21, 72, 104);
+    background-color: #b6e0fa;
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    text-align: center;
+    margin-right: 100px;
+    margin-left: 100px;
+    border-radius: 5px;
+}
+
+#pastainfo {
+    float: left;
+    border-radius: 5px;
+    background-color: #3d84af;
+    width: 510px;
+    height: 600px;
+}
+
+#pastainfo p {
+    color:rgb(3, 28, 43);
+    margin-top: 220px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 36px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+#coffeefacts {
+    background-color: #050505;
+    padding: 110px 140px;
+    height: 780px;
+}
+
+#coffeefactsheading {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 72px;
+    text-shadow: 3px 3px rgb(71, 106, 107);
+    margin-bottom: 50px;
+    margin-top: 0;
+    background-color: #83c7f1;
+    border-radius: 5px;
+}
+
+#videodiv {
+    float: left;
+}
+
+#descriptiondiv {
+    float:left;
+    width: 547px;
+    height: 615px;
+    background-color: #1b1b1b;
+}
+
+#descriptiondiv p {
+    color: #c8edf1;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 30px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li>
+                    <a href="about.html">
+                    About
+                    </a>
+                </li>
+                <li>
+                    <a href="menu.html">
+                    Menu
+                    </a>
+                </li>
+                <li>
+                    <a id="current_page">
+                    Home
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <header>
+            <div id="welcome_border">
+                <h2 id="welcome" class="title_heading">Welcome to</h2>
+            </div>
+            <div id="sea_brew" class="title_heading">
+                <div id="sea">Sea</div>
+                <img id="coffee_logo" src="pictures/coffee_logo.png" alt="Photo Loading">
+                <div id="brew">Brew</div>
+            </div>
+        </header>
+        <section id="Favorites">
+            <h2 id="favoritesheading">Favorites</h2>
+            <div id="coffee_float"><h3 id="favoritescoffee">Coffee</h3></div><div id="coffeebean"></div>
+            <div id="cclatte">
+                <div id="lattepicture"></div>
+                <div id="latteinfo">
+                    <h2>Chocolate Caramel Latte</h2>
+                    <h3>149.00 Php</h3>
+                    <p>Warm coffee mixed with dark chocolate syrup and caramel. Warm milk is added later to make a pattern on top of the coffee.</p>
+                </div>
+            </div>
+            <div id="snacks_float"><h3 id="favoritessnacks">Snacks</h3></div><div id="sandwich"></div>
+            <div id="cookies">  
+                <div id="cookiesinfo">
+                    <h2>Chocolate Chip Cookies</h2>
+                    <h3>49.00 Php</h3>
+                    <p>Cookies made from sugar, flour and butter. It is mixed with chunks of chocolate and nuts. It is baked in 45 minutes.</p>
+                </div>
+                <div id="cookiespicture"></div>
+            </div>
+            <div id="dinner_float"><h3 id="favoritedinner">Dinner</h3></div><div id="plate"></div>
+            <div id="pasta">
+                <div id="pastafloatleft">
+                    <div id="pastapicture"></div>
+                    <h2>Shrimp Alfredo</h2>
+                    <h3>399.00 Php</h3>
+                </div>
+                <div id="pastainfo">
+                    <p>Boiled penne pasta with alfredo sauce and shrimps.</p>
+                </div>
+            </div>
+        </section>
+        <section id="coffeefacts">
+            <h2 id="coffeefactsheading">How We Make Our Coffee</h2>
+            <div id="videodiv">
+                <video width="1093" height="615" autoplay muted loop>
+                    <source src="videos/coffee_scroll.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div id="descriptiondiv">
+                <p>We get our coffee beans ready. We crush them before our very customers and serve it to them later on. We want to show the process to our customers, and it gives them a new view on the production of coffee.</p>
+            </div>
+        </section>
+    </body>
+</html>
