@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title>
+            YMemes Minecraft
+        </title>
+        <style>
+            
+            body{
+                margin: 0;
+            }
+            nav{
+                background-color: rgb(207, 207, 207);
+                position: fixed;
+                overflow: hidden;
+                width: 100%;
+                top: 0;
+            }
+            nav h2 {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 20px;
+                float: left;
+                font-family: 'Lobster', cursive;
+                font-size: 24px;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            nav li{
+                display: inline;
+                float: right;
+            }
+            
+            nav li a {
+                display: block;
+                padding: 14px 100px;
+                background-color: #c1edf3;
+                color:rgb(0, 28, 29);
+                text-align: center;
+                text-decoration: none;
+                font-size: 24px;
+                font-family: 'Source Sans Pro', sans-serif;
+                transition-duration: 500ms;
+            }
+            nav li a:hover {
+                background-color: #99d4db;
+                text-shadow: 2px 2px 7px white;
+            }
+            #currentpage {
+                background-color: #8cccd4;
+            }
+            #currentpage:hover {
+                background-color: #8cccd4;
+            }
+            #memearea {
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 100px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 36px;
+                border-radius: 4px;
+            }
+            #dirt {
+                background-image: url(images/minecraft-dirt-block.png); 
+                background-size: cover; 
+                height: 96px; 
+                width: 96px; 
+                float: left; 
+                margin-top: 10px;
+            }
+            #memearea h2 {
+                background-color: rgb(196, 196, 196);
+                display: inline-block;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 1.5em;
+            }
+            #block {
+                width: 100%;
+                padding-bottom: 170%;
+                padding-top: 10%;
+            }
+            .memes {
+                width: 49%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                margin-bottom: 1%;
+                background-color:rgb(211, 211, 211);
+                border-radius: 4px;
+                border-color: rgb(29, 29, 29);
+                border-width: 2px;
+                border-style: solid;
+                box-shadow: 0 0 5px black;
+            }
+            #meme1{
+                float: left;
+            }
+            #meme1 img{
+                width: 100%;
+            }
+            #meme2{
+                padding-top: 8.15%;
+                padding-bottom: 8.15%;
+                float: right;
+            }
+            #meme2 img{
+                width: 100%;
+            }
+            #meme3{
+                float: left;
+            }
+            #meme3 img{
+                display: block;
+                width: 92.7%;
+                margin: auto;
+            }
+            #meme4{
+                padding-top: 2.77%;
+                padding-bottom: 2.77%;
+                float: right;
+            }
+            #meme4 img{
+                width: 100%;
+            }
+            #meme5{
+                padding-top: 7.35%;
+                padding-bottom: 7.35%;
+                float: left;
+            }
+            #meme5 img{
+                width: 100%;
+            }
+            #meme6{
+                float: right;
+            }
+            #meme6 img{
+                width: 76%;
+                display: block;
+                margin: auto;
+            }
+            footer {
+                background-color: rgb(39, 39, 39);
+                height: fit-content;
+                width: 80%;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                color:rgb(211, 211, 211);
+                font-family: "Source Sans Pro", sans-serif;
+            }
+            footer p{
+                font-size: 12px;
+            }
+
+            @media (max-width: 1100px) {
+                body {
+                    width: auto;
+                }
+                nav {
+                    padding-top: 15px;
+                    position: static;
+                }
+                nav h2 {
+                    font-size: 12px;
+                    float: none;
+                    margin-top: 0;
+                }
+                nav li{
+                    display: block;
+                    float:none;
+                }
+                nav li a {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 16px;
+                }
+                #memearea {
+                    margin: 0;
+                }
+                #memearea h2{
+                    font-size: 0.75em;
+                }
+                #dirt{
+                    height: 72px;
+                    width: 72px;
+                }
+                #block {
+                    padding-bottom: 640%;
+                }
+                .memes {
+                    width: 98%;
+                    margin-left: 1%;
+                    margin-right:1%;
+                    float: none;
+                }
+                footer p{
+                font-size: 6px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h2>Ymemes</h2>
+            <ul>
+                <li>
+                    <a id="currentpage">
+                    Minecraft
+                    </a>
+                </li>
+                <li>
+                    <a href="gd.html">
+                    Geometry Dash
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                    Home
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="memearea">
+            <div style="background-color:rgb(196, 196, 196); border-radius: 4px;">
+                <div id="dirt"></div>
+                <h2>Random Minecraft Memes</h2>
+            </div>
+            <div id="block">
+                <div>
+                    <div id="meme1" class="memes"><img src="images/minecraft_images/image1.jpg" alt="Image Loading"></div>
+                    <div id="meme2" class="memes"><img src="images/minecraft_images/image2.jpg" alt="Image Loading"></div>
+                </div>
+                <div>
+                    <div id="meme3" class="memes"><img src="images/minecraft_images/image3.jpg" alt="Image Loading"></div>
+                    <div id="meme4" class="memes"><img src="images/minecraft_images/image4.jpg" alt="Image Loading"></div>
+                </div>
+                <div>
+                    <div id="meme5" class="memes"><img src="images/minecraft_images/image5.jpg" alt="Image Loading"></div>
+                    <div id="meme6" class="memes"><img src="images/minecraft_images/image6.jpg" alt="Image Loading"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>References: </h2>
+            <p>[ylmzefe_].(2022, December 17)<span style="font-style: italic;">wtf</span> [Online forum post]. Reddit. https://www.reddit.com/r/MinecraftMemes/comments/znmm61/wtf/</p>
+            <p>[OriginalXboxgamertag].(2022, December 17)<span style="font-style: italic;">I sure love killing spiders</span> [Online forum post]. Reddit. https://www.reddit.com/r/MinecraftMemes/comments/znig8q/i_sure_love_killing_spiders/</p>
+            <p>[Zayn_with_a_y].(2022, December 17)<span style="font-style: italic;">We can count on 1.20!</span> [Online forum post]. Reddit. https://www.reddit.com/r/MinecraftMemes/comments/znlbm6/we_can_count_on_120/</p>
+            <p>[Pigcrafter].(2022, December 17)<span style="font-style: italic;">Yeah</span> [Online forum post]. Reddit. https://www.reddit.com/r/MinecraftMemes/comments/znkrwe/yeah/</p>
+            <p>[coolsteelboyS4ndyBoy].(2022, December 17)<span style="font-style: italic;">More featuresXD</span> [Online forum post]. Reddit. https://www.reddit.com/r/MinecraftMemes/comments/zn7bsw/more_featuresxd/</p>
+            <p>[rl_GhostwithoutHost].(2022, December 16)<span style="font-style: italic;">*intense staring*</span> [Online forum post]. Reddit. https://www.reddit.com/r/MinecraftMemes/comments/zmotdo/intense_staring/</p>
+        </footer>
+    </body>
+</html>

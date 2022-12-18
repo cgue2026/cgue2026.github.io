@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title>
+            YMemes Geometry Dash
+        </title>
+        <style>
+            
+            body{
+                margin: 0;
+            }
+            nav{
+                background-color: rgb(207, 207, 207);
+                position: fixed;
+                overflow: hidden;
+                width: 100%;
+                top: 0;
+            }
+            nav h2 {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 20px;
+                float: left;
+                font-family: 'Lobster', cursive;
+                font-size: 24px;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            nav li{
+                display: inline;
+                float: right;
+            }
+            
+            nav li a {
+                display: block;
+                padding: 14px 100px;
+                background-color: #c1edf3;
+                color:rgb(0, 28, 29);
+                text-align: center;
+                text-decoration: none;
+                font-size: 24px;
+                font-family: 'Source Sans Pro', sans-serif;
+                transition-duration: 500ms;
+            }
+            nav li a:hover {
+                background-color: #99d4db;
+                text-shadow: 2px 2px 7px white;
+            }
+            #currentpage {
+                background-color: #8cccd4;
+            }
+            #currentpage:hover {
+                background-color: #8cccd4;
+            }
+            #memearea {
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 100px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 36px;
+                border-radius: 4px;
+            }
+            #icon {
+                background-image: url(images/cube-gd-icon.png); 
+                background-size: cover; 
+                height: 96px; 
+                width: 96px; 
+                float: left; 
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            #memearea h2 {
+                background-color: rgb(196, 196, 196);
+                display: inline-block;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 1.5em;
+            }
+            #block {
+                width: 100%;
+                padding-bottom: 130%;
+                padding-top: 10%;
+            }
+            .memes {
+                width: 49%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                margin-bottom: 1%;
+                background-color:rgb(211, 211, 211);
+                border-radius: 4px;
+                border-color: rgb(29, 29, 29);
+                border-width: 2px;
+                border-style: solid;
+                box-shadow: 0 0 5px black;
+            }
+            #meme1{
+                float: left;
+            }
+            #meme1 img{
+                width: 100%;
+            }
+            #meme2{
+                float: right;
+            }
+            #meme2 img{
+                display: block;
+                width: 43.7%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #meme3{
+                float: left;
+            }
+            #meme3 img{
+                display: block;
+                width: 92.7%;
+                margin: auto;
+            }
+            #meme4{
+                float: right;
+            }
+            #meme4 img{
+                display: block;
+                width: 50.1%;
+                margin: auto;
+            }
+            #meme5{
+                float: left;
+            }
+            #meme5 img{
+                display: block;
+                width: 73.5%;
+                margin: auto;
+            }
+            #meme6{
+                float: right;
+            }
+            #meme6 img{
+                width: 100%;
+            }
+            footer {
+                background-color: rgb(39, 39, 39);
+                height: fit-content;
+                width: 80%;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                color:rgb(211, 211, 211);
+                font-family: "Source Sans Pro", sans-serif;
+            }
+            footer p{
+                font-size: 12px;
+            }
+
+            @media (max-width: 1100px) {
+                body {
+                    width: auto;
+                }
+                nav {
+                    padding-top: 15px;
+                    position: static;
+                }
+                nav h2 {
+                    font-size: 12px;
+                    float: none;
+                    margin-top: 0;
+                }
+                nav li{
+                    display: block;
+                    float:none;
+                }
+                nav li a {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 16px;
+                }
+                #memearea {
+                    margin: 0;
+                }
+                #memearea h2{
+                    font-size: 0.75em;
+                }
+                #icon{
+                    height: 67px;
+                    width: 67px;
+                }
+                #block {
+                    padding-bottom: 500%;
+                }
+                .memes {
+                    width: 98%;
+                    margin-left: 1%;
+                    margin-right:1%;
+                    float: none;
+                }
+                footer p{
+                font-size: 6px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h2>Ymemes</h2>
+            <ul>
+                <li>
+                    <a href="minecraft.html">
+                    Minecraft
+                    </a>
+                </li>
+                <li>
+                    <a id="currentpage">
+                    Geometry Dash
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                    Home
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="memearea">
+            <div style="background-color:rgb(196, 196, 196); border-radius: 4px; padding-left: 10px;">
+                <div id="icon"></div>
+                <h2>Random GD Memes</h2>
+            </div>
+            <div id="block">
+                <div>
+                    <div id="meme1" class="memes"><img src="images/gd_images/image1.png" alt="Image Loading"></div>
+                    <div id="meme2" class="memes"><img src="images/gd_images/image2.jpg" alt="Image Loading"></div>
+                </div>
+                <div>
+                    <div id="meme3" class="memes"><img src="images/gd_images/image3.png" alt="Image Loading"></div>
+                    <div id="meme4" class="memes"><img src="images/gd_images/image4.png" alt="Image Loading"></div>
+                </div>
+                <div>
+                    <div id="meme5" class="memes"><img src="images/gd_images/image5.jpg" alt="Image Loading"></div>
+                    <div id="meme6" class="memes"><img src="images/gd_images/image6.jpg" alt="Image Loading"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>References: </h2>
+            <p>[SolysisTerra].(2022, December 11)<span style="font-style: italic;">google search results for easiest extreme demon in gd 2022 real updated</span> [Online forum post]. Reddit. https://www.reddit.com/r/geometrydash/comments/zib2aq/google_search_results_for_easiest_extreme_demon/</p>
+            <p>[cherry4422].(2022, December 15)<span style="font-style: italic;">When I had to do research for stats, I knew it had to be something important</span> [Online forum post]. Reddit. https://www.reddit.com/r/geometrydash/comments/zm16gv/when_i_had_to_do_research_for_stats_i_knew_it_had/</p>
+            <p>[CinnamoonPi].(2022, December 14)<span style="font-style: italic;">Merry Christmas everyone :)</span> [Online forum post]. Reddit. https://www.reddit.com/r/geometrydash/comments/zlmmb4/merry_christmas_everyone/</p>
+            <p>[park__rat].(2022, December 13)<span style="font-style: italic;">I rarely use the green or in levels tbh</span> [Online forum post]. Reddit. https://www.reddit.com/r/geometrydash/comments/zkozkd/i_rarely_use_the_green_or_in_levels_tbh/</p>
+            <p>[johnsongamer].(2022, December 13)<span style="font-style: italic;">do you know?</span> [Online forum post]. Reddit. https://www.reddit.com/r/geometrydash/comments/zkfcqy/do_you_know/</p>
+            <p>[itisbutascratch].(2022, December 13)<span style="font-style: italic;">Which side are you on?</span> [Online forum post]. Reddit. https://www.reddit.com/r/geometrydash/comments/zkd427/which_side_are_you_on/</p>
+        </footer>
+    </body>
+</html>

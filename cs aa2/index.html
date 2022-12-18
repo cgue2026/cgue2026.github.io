@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+        <title>
+            YMemes Geometry Dash
+        </title>
+        <style>
+            
+            body{
+                margin: 0;
+            }
+            nav{
+                background-color: rgb(207, 207, 207);
+                position: fixed;
+                overflow: hidden;
+                width: 100%;
+                top: 0;
+            }
+            nav h2 {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                margin-left: 20px;
+                float: left;
+                font-family: 'Lobster', cursive;
+                font-size: 24px;
+            }
+            nav ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+
+            nav li{
+                display: inline;
+                float: right;
+            }
+            
+            nav li a {
+                display: block;
+                padding: 14px 100px;
+                background-color: #c1edf3;
+                color:rgb(0, 28, 29);
+                text-align: center;
+                text-decoration: none;
+                font-size: 24px;
+                font-family: 'Source Sans Pro', sans-serif;
+                transition-duration: 500ms;
+            }
+            nav li a:hover {
+                background-color: #99d4db;
+                text-shadow: 2px 2px 7px white;
+            }
+            #currentpage {
+                background-color: #8cccd4;
+            }
+            #currentpage:hover {
+                background-color: #8cccd4;
+            }
+            #memearea {
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 100px;
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: 36px;
+                border-radius: 4px;
+            }
+            #memearea h2 {
+                background-color: rgb(196, 196, 196);
+                display: inline-block;
+                margin-top: 25px;
+                margin-bottom: 25px;
+                font-size: 1.5em;
+            }
+            #block {
+                width: 100%;
+                padding-bottom: 150%;
+                padding-top: 10%;
+            }
+            .memes {
+                width: 49%;
+                padding-top: 1%;
+                padding-bottom: 1%;
+                margin-bottom: 1%;
+                background-color:rgb(211, 211, 211);
+                border-radius: 4px;
+                border-color: rgb(29, 29, 29);
+                border-width: 2px;
+                border-style: solid;
+                box-shadow: 0 0 5px black;
+            }
+            #meme1{
+                float: left;
+            }
+            #meme1 img{
+                width: 100%;
+            }
+            #meme2{
+                float: right;
+            }
+            #meme2 img{
+                display: block;
+                width: 62.6%;
+                margin: auto;
+            }
+            #meme3{
+                float: left;
+            }
+            #meme3 img{
+                display: block;
+                width: 58.3%;
+                margin: auto;
+            }
+            #meme4{
+                float: right;
+            }
+            #meme4 img{
+                display: block;
+                width: 81%;
+                margin: auto;
+            }
+            #meme5{
+                float: left;
+            }
+            #meme5 img{
+                width: 100%;
+            }
+            #meme6{
+                float: right;
+            }
+            #meme6 img{
+                display: block;
+                width: 60.5%;
+                margin: auto;
+            }
+            footer {
+                background-color: rgb(39, 39, 39);
+                height: fit-content;
+                width: 80%;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+                color:rgb(211, 211, 211);
+                font-family: "Source Sans Pro", sans-serif;
+                overflow: hidden;
+            }
+            footer p{
+                font-size: 12px;
+            }
+
+            @media (max-width: 1100px) {
+                body {
+                    width: auto;
+                }
+                nav {
+                    padding-top: 15px;
+                    position: static;
+                }
+                nav h2 {
+                    font-size: 12px;
+                    float: none;
+                    margin-top: 0;
+                }
+                nav li{
+                    display: block;
+                    float:none;
+                }
+                nav li a {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    font-size: 16px;
+                }
+                #memearea {
+                    margin: 0;
+                }
+                #memearea h2{
+                    font-size: 0.75em;
+                }
+                #icon{
+                    height: 67px;
+                    width: 67px;
+                }
+                #block {
+                    padding-bottom: 560%;
+                }
+                .memes {
+                    width: 98%;
+                    margin-left: 1%;
+                    margin-right:1%;
+                    float: none;
+                }
+                footer p{
+                font-size: 6px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <h2>Ymemes</h2>
+            <ul>
+                <li>
+                    <a href="minecraft.html">
+                    Minecraft
+                    </a>
+                </li>
+                <li>
+                    <a href="gd.html">
+                    Geometry Dash
+                    </a>
+                </li>
+                <li>
+                    <a id="currentpage">
+                    Home
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <section id="memearea">
+            <div style="background-color:rgb(196, 196, 196); border-radius: 4px; padding-left: 10px;">
+                <h2>Random Study Memes</h2>
+            </div>
+            <p>Study memes because pisay</p>
+            <div id="block">
+                <div>
+                    <div id="meme1" class="memes"><img src="images/study_images/image1.jpg" alt="Image Loading"></div>
+                    <div id="meme2" class="memes"><img src="images/study_images/image2.png" alt="Image Loading"></div>
+                </div>
+                <div>
+                    <div id="meme3" class="memes"><img src="images/study_images/image3.jpg" alt="Image Loading"></div>
+                    <div id="meme4" class="memes"><img src="images/study_images/image4.jpg" alt="Image Loading"></div>
+                </div>
+                <div>
+                    <div id="meme5" class="memes"><img src="images/study_images/image5.jpg" alt="Image Loading"></div>
+                    <div id="meme6" class="memes"><img src="images/study_images/image6.jpg" alt="Image Loading"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h2>References: </h2>
+            <p>[TitanGuppie].(2022, November 23)<span style="font-style: italic;">I should be studying, but eh</span> [Online forum post]. Reddit. https://www.reddit.com/r/memes/comments/z2pctt/i_should_be_studying_but_eh/</p>
+            <p>[Waitwha19].(2022, December 10)<span style="font-style: italic;">Studying</span> [Online forum post]. Reddit. https://www.reddit.com/r/memes/comments/zh9ypw/studying/</p>
+            <p>[ThatMustardGuy].(2022, September 29)<span style="font-style: italic;">Commiting Arson > Studying</span> [Online forum post]. Reddit. </p>
+            <p>[Technical-Ad-7008].(2022, November 6)<span style="font-style: italic;">My mom after visiting my room again, right at the time where I start taking a break from studying and start up a game</span> [Online forum post]. Reddit. https://www.reddit.com/r/memes/comments/ynjgy4/my_mom_after_visiting_my_room_again_right_at_the/</p>
+            <p>[Frennem].(2022, November 15)<span style="font-style: italic;">I’m studying I swear</span> [Online forum post]. Reddit. https://www.reddit.com/r/memes/comments/yv88rp/im_studying_i_swear/</p>
+            <p>[The_R3venant].(2022, September 25)<span style="font-style: italic;">You have to study for your futur... oh wait</span> [Online forum post]. Reddit. https://www.reddit.com/r/memes/comments/xn8j59/you_have_to_study_for_your_futur_oh_wait/</p>
+        </footer>
+    </body>
+</html>
